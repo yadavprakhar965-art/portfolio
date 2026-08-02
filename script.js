@@ -256,7 +256,7 @@ function initProjectModal() {
                     </div>
 
                     <div style="display: flex; gap: 1rem;">
-                        <a href="https://github.com/prakharyadav" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                        <a href="https://github.com/yadavprakhar965-art" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
                             <i class="fa-brands fa-github"></i> View GitHub Repository
                         </a>
                     </div>
