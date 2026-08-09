@@ -124,7 +124,7 @@
                             <pre><code><span class="kwd">public class</span> <span class="cls">DeveloperProfile</span> {
     <span class="kwd">private</span> String name = <span class="str">"Prakhar Yadav"</span>;
     <span class="kwd">private</span> String degree = <span class="str">"B.Tech CSE"</span>;
-    <span class="kwd">private</span> String[] stack = {<span class="str">"Spring Boot"</span>, <span class="str">"React"</span>, <span class="str">"Java"</span>, <span class="str">"MySQL"</span>};
+    <span class="kwd">private</span> String[] stack = {<span class="str">"Spring Boot"</span>, <span class="str">"React"</span>, <span class="str">"FastAPI"</span>, <span class="str">"Docker"</span>, <span class="str">"MySQL"</span>};
 
     <span class="kwd">public void</span> <span class="func">buildScalableApps</span>() {
         System.out.println(<span class="str">"Transforming requirements into functional code..."</span>);
@@ -230,7 +230,6 @@
                             <span class="skill-tag highlight"><i class="fa-brands fa-java"></i> Java</span>
                             <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
                             <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
-                            <span class="skill-tag"><i class="fa-solid fa-c"></i> C</span>
                             <span class="skill-tag"><i class="fa-solid fa-code"></i> C++</span>
                         </div>
                     </div>
@@ -244,6 +243,7 @@
                         <div class="skills-tags">
                             <span class="skill-tag highlight"><i class="fa-solid fa-leaf"></i> Spring Boot</span>
                             <span class="skill-tag highlight"><i class="fa-brands fa-react"></i> React</span>
+                            <span class="skill-tag highlight"><i class="fa-solid fa-bolt"></i> FastAPI</span>
                             <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5</span>
                             <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
                             <span class="skill-tag"><i class="fa-solid fa-network-wired"></i> RESTful APIs</span>
@@ -272,6 +272,7 @@
                             <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git</span>
                             <span class="skill-tag"><i class="fa-brands fa-github"></i> GitHub</span>
                             <span class="skill-tag"><i class="fa-solid fa-terminal"></i> VS Code</span>
+                            <span class="skill-tag highlight"><i class="fa-brands fa-docker"></i> Docker</span>
                         </div>
                     </div>
 
@@ -312,14 +313,56 @@
             <div class="container">
                 <div class="section-header">
                     <span class="section-subtitle">Featured Work</span>
-                    <h2 class="section-title">Selected <span class="gradient-text">Project</span></h2>
+                    <h2 class="section-title">Selected <span class="gradient-text">Projects</span></h2>
                 </div>
 
                 <div class="projects-grid">
-                    <!-- Project 1 -->
+                    <!-- Project 1: MediSense -->
                     <div class="project-card glass-card">
                         <div class="project-banner">
                             <div class="project-badge">Featured</div>
+                            <div class="project-banner-content">
+                                <i class="fa-solid fa-heart-pulse banner-icon"></i>
+                                <span>React + FastAPI + Scikit-Learn + Docker</span>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+                            <div class="project-tech-stack">
+                                <span class="tech-pill">React</span>
+                                <span class="tech-pill">FastAPI</span>
+                                <span class="tech-pill">Scikit-Learn</span>
+                                <span class="tech-pill">PyMuPDF</span>
+                                <span class="tech-pill">Docker</span>
+                                <span class="tech-pill">JWT</span>
+                            </div>
+
+                            <h3 class="project-title">MediSense — AI-Powered Healthcare Platform</h3>
+                            <p class="project-desc">
+                                A full-stack AI healthcare platform offering role-based authentication, ML disease risk prediction models, automated medical report analysis, an AI health chatbot, and vitals analytics.
+                            </p>
+
+                            <ul class="project-features">
+                                <li><i class="fa-solid fa-check feature-check"></i> Role-based JWT authentication for Patient, Doctor, and Admin portals.</li>
+                                <li><i class="fa-solid fa-check feature-check"></i> ML-based disease risk prediction models for diabetes and cardiovascular health.</li>
+                                <li><i class="fa-solid fa-check feature-check"></i> Automated PyMuPDF-based medical lab report analyzer and AI health assistant chatbot.</li>
+                                <li><i class="fa-solid fa-check feature-check"></i> Recharts vitals analytics dashboard; fully containerized with Docker.</li>
+                            </ul>
+
+                            <div class="project-actions">
+                                <button class="btn btn-primary btn-sm modal-trigger" data-project="medisense">
+                                    <i class="fa-solid fa-circle-info"></i> Details
+                                </button>
+                                <a href="https://github.com/yadavprakhar965-art" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                                    <i class="fa-brands fa-github"></i> Repository
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Internship Recommender System -->
+                    <div class="project-card glass-card">
+                        <div class="project-banner">
                             <div class="project-banner-content">
                                 <i class="fa-solid fa-briefcase banner-icon"></i>
                                 <span>Spring Boot + React + MySQL</span>
@@ -341,10 +384,9 @@
                             </p>
 
                             <ul class="project-features">
-                                <li><i class="fa-solid fa-check feature-check"></i> Built a complete profile matching engine using ML-based recommendation algorithms.</li>
-                                <li><i class="fa-solid fa-check feature-check"></i> Developed robust backend microservices with Spring Boot and RESTful endpoints.</li>
-                                <li><i class="fa-solid fa-check feature-check"></i> Integrated MySQL relational database for fast query processing and user profile data storage.</li>
-                                <li><i class="fa-solid fa-check feature-check"></i> Responsive frontend interface for internship applicants and recruiters.</li>
+                                <li><i class="fa-solid fa-check feature-check"></i> Built a recommendation platform with a Spring Boot REST API backend and MySQL.</li>
+                                <li><i class="fa-solid fa-check feature-check"></i> Integrated ML-based logic to improve profile-to-internship matching accuracy.</li>
+                                <li><i class="fa-solid fa-check feature-check"></i> Optimized MySQL database schema for quick profile data querying and match calculations.</li>
                             </ul>
 
                             <div class="project-actions">

@@ -45,10 +45,10 @@ function initTypingEffect() {
     if (!typingElement) return;
 
     const phrases = [
-        "Full-Stack Web Applications",
-        "Spring Boot REST APIs",
-        "React Interfaces & MySQL Systems",
-        "Scalable & Efficient Code"
+        "AI Healthcare Platforms",
+        "Spring Boot & FastAPI Backends",
+        "React Web Apps & Docker Systems",
+        "Scalable Machine Learning Solutions"
     ];
 
     let phraseIndex = 0;
@@ -229,6 +229,42 @@ function initProjectModal() {
     if (!modal) return;
 
     const projectData = {
+        'medisense': {
+            title: 'MediSense — AI-Powered Healthcare Platform',
+            content: `
+                <div class="project-modal-details">
+                    <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">
+                        <strong>MediSense</strong> is an end-to-end AI-powered healthcare management platform featuring multi-role access control, predictive disease risk models, and automated medical lab report analysis.
+                    </p>
+
+                    <h4 style="margin-bottom: 0.8rem; color: var(--primary-color);">Key Technical Features</h4>
+                    <ul style="margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.6rem; color: var(--text-secondary);">
+                        <li><strong>Multi-Role Authentication:</strong> Role-based JWT security layer supporting Patient, Doctor, and Administrator portals.</li>
+                        <li><strong>Disease Risk Models:</strong> Machine learning algorithms built with Scikit-Learn to assess diabetes and cardiovascular risk levels.</li>
+                        <li><strong>Medical Report Analyzer:</strong> Automated PDF parsing via PyMuPDF to extract and format diagnostic lab parameters.</li>
+                        <li><strong>Vitals Analytics & Assistant:</strong> Interactive Recharts telemetry dashboards and an AI health assistant chatbot for patient consultation.</li>
+                        <li><strong>Containerization:</strong> Dockerized service architecture for seamless deployment and local orchestration.</li>
+                    </ul>
+
+                    <h4 style="margin-bottom: 0.8rem; color: var(--primary-color);">Technology Stack</h4>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 2rem;">
+                        <span class="tech-pill">React</span>
+                        <span class="tech-pill">FastAPI</span>
+                        <span class="tech-pill">Scikit-Learn</span>
+                        <span class="tech-pill">PyMuPDF</span>
+                        <span class="tech-pill">Docker</span>
+                        <span class="tech-pill">Recharts</span>
+                        <span class="tech-pill">JWT</span>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem;">
+                        <a href="https://github.com/yadavprakhar965-art" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                            <i class="fa-brands fa-github"></i> View GitHub Repository
+                        </a>
+                    </div>
+                </div>
+            `
+        },
         'internship-recommender': {
             title: 'Internship Recommender System',
             content: `

@@ -764,8 +764,9 @@ img {
    -------------------------------------------------------------------------- */
 .projects-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    max-width: 900px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2.5rem;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
