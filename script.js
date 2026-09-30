@@ -45,10 +45,10 @@ function initTypingEffect() {
     if (!typingElement) return;
 
     const phrases = [
-        "AI Healthcare Platforms",
-        "Spring Boot & FastAPI Backends",
-        "React Web Apps & Docker Systems",
-        "Scalable Machine Learning Solutions"
+        "FastAPI & Spring Boot APIs",
+        "Expense Trackers & HR Systems",
+        "Responsive JavaScript Apps",
+        "Scalable Database Architecture"
     ];
 
     let phraseIndex = 0;
@@ -229,32 +229,29 @@ function initProjectModal() {
     if (!modal) return;
 
     const projectData = {
-        'medisense': {
-            title: 'MediSense — AI-Powered Healthcare Platform',
+        'expense-tracker': {
+            title: 'Expense Tracker API',
             content: `
                 <div class="project-modal-details">
                     <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">
-                        <strong>MediSense</strong> is an end-to-end AI-powered healthcare management platform featuring multi-role access control, predictive disease risk models, and automated medical lab report analysis.
+                        The <strong>Expense Tracker API</strong> is a high-performance RESTful API service built with FastAPI and MySQL that enables users to manage daily financial transactions, categorize expenses, and analyze spending habits.
                     </p>
 
-                    <h4 style="margin-bottom: 0.8rem; color: var(--primary-color);">Key Technical Features</h4>
+                    <h4 style="margin-bottom: 0.8rem; color: var(--primary-color);">Key Technical Architecture</h4>
                     <ul style="margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.6rem; color: var(--text-secondary);">
-                        <li><strong>Multi-Role Authentication:</strong> Role-based JWT security layer supporting Patient, Doctor, and Administrator portals.</li>
-                        <li><strong>Disease Risk Models:</strong> Machine learning algorithms built with Scikit-Learn to assess diabetes and cardiovascular risk levels.</li>
-                        <li><strong>Medical Report Analyzer:</strong> Automated PDF parsing via PyMuPDF to extract and format diagnostic lab parameters.</li>
-                        <li><strong>Vitals Analytics & Assistant:</strong> Interactive Recharts telemetry dashboards and an AI health assistant chatbot for patient consultation.</li>
-                        <li><strong>Containerization:</strong> Dockerized service architecture for seamless deployment and local orchestration.</li>
+                        <li><strong>CRUD Operations:</strong> Complete endpoints for creating, editing, deleting, and searching daily expense records.</li>
+                        <li><strong>Advanced Filtering:</strong> Filter query endpoints by specific spending categories or custom date ranges.</li>
+                        <li><strong>Summary Analytics Engine:</strong> Calculates real-time total spending, average daily expense, and top spending category.</li>
+                        <li><strong>Database Layer:</strong> Optimized MySQL relational schema using Python ORM queries for low latency.</li>
                     </ul>
 
                     <h4 style="margin-bottom: 0.8rem; color: var(--primary-color);">Technology Stack</h4>
                     <div style="display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 2rem;">
-                        <span class="tech-pill">React</span>
                         <span class="tech-pill">FastAPI</span>
-                        <span class="tech-pill">Scikit-Learn</span>
-                        <span class="tech-pill">PyMuPDF</span>
-                        <span class="tech-pill">Docker</span>
-                        <span class="tech-pill">Recharts</span>
-                        <span class="tech-pill">JWT</span>
+                        <span class="tech-pill">Python</span>
+                        <span class="tech-pill">MySQL</span>
+                        <span class="tech-pill">RESTful APIs</span>
+                        <span class="tech-pill">Postman</span>
                     </div>
 
                     <div style="display: flex; gap: 1rem;">
@@ -265,30 +262,60 @@ function initProjectModal() {
                 </div>
             `
         },
-        'internship-recommender': {
-            title: 'Internship Recommender System',
+        'employee-management': {
+            title: 'Employee Management System',
             content: `
                 <div class="project-modal-details">
                     <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">
-                        The <strong>Internship Recommender System</strong> is a full-stack platform engineered to match student profiles with relevant internship positions using profile parameters, skill tagging, and ML-assisted scoring algorithms.
+                        The <strong>Employee Management System</strong> is an end-to-end full-stack solution featuring a Spring Boot REST API and an intuitive management frontend interface for HR administration.
                     </p>
 
-                    <h4 style="margin-bottom: 0.8rem; color: var(--primary-color);">Key Technical Architecture</h4>
+                    <h4 style="margin-bottom: 0.8rem; color: var(--primary-color);">Key Technical Features</h4>
                     <ul style="margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.6rem; color: var(--text-secondary);">
-                        <li><strong>Backend API:</strong> Spring Boot application serving RESTful endpoints for profile management, internship catalog search, and match calculations.</li>
-                        <li><strong>Database Layer:</strong> MySQL relational database storing user profiles, recruiters, candidate preferences, and internship specifications.</li>
-                        <li><strong>Frontend Interface:</strong> Responsive React component architecture facilitating easy resume submission and match score visualizations.</li>
-                        <li><strong>Recommendation Engine:</strong> Integrated ML logic weighing applicant skills against internship prerequisites for accuracy improvement.</li>
+                        <li><strong>Employee Records Management:</strong> Robust REST endpoints to add, update, delete, and search corporate employee records.</li>
+                        <li><strong>Department & Salary Analytics:</strong> Departmental filtering views with automated salary aggregation and breakdown for each department.</li>
+                        <li><strong>HR Web Dashboard:</strong> Clean, responsive web dashboard allowing HR staff to visualize and manage company employees seamlessly.</li>
+                        <li><strong>Persistence Layer:</strong> Built on Spring Data JPA and MySQL database for relational integrity.</li>
                     </ul>
 
-                    <h4 style="margin-bottom: 0.8rem; color: var(--primary-color);">Technology Stack Highlights</h4>
+                    <h4 style="margin-bottom: 0.8rem; color: var(--primary-color);">Technology Stack</h4>
                     <div style="display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 2rem;">
                         <span class="tech-pill">Spring Boot</span>
-                        <span class="tech-pill">React</span>
+                        <span class="tech-pill">Spring Data JPA</span>
+                        <span class="tech-pill">Java</span>
                         <span class="tech-pill">MySQL</span>
-                        <span class="tech-pill">RESTful APIs</span>
-                        <span class="tech-pill">Machine Learning</span>
-                        <span class="tech-pill">Java 8</span>
+                        <span class="tech-pill">HTML/CSS</span>
+                    </div>
+
+                    <div style="display: flex; gap: 1rem;">
+                        <a href="https://github.com/yadavprakhar965-art" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                            <i class="fa-brands fa-github"></i> View GitHub Repository
+                        </a>
+                    </div>
+                </div>
+            `
+        },
+        'weather-app': {
+            title: 'Weather App',
+            content: `
+                <div class="project-modal-details">
+                    <p style="margin-bottom: 1.5rem; color: var(--text-secondary);">
+                        The <strong>Weather App</strong> is a modern, responsive frontend web application that fetches live weather forecasts and meteorological metrics for worldwide cities using public weather REST APIs.
+                    </p>
+
+                    <h4 style="margin-bottom: 0.8rem; color: var(--primary-color);">Key Technical Features</h4>
+                    <ul style="margin-bottom: 1.5rem; display: flex; flex-direction: column; gap: 0.6rem; color: var(--text-secondary);">
+                        <li><strong>Live Weather Fetching:</strong> Asynchronous Fetch API integration providing real-time temperature, humidity, and atmospheric conditions.</li>
+                        <li><strong>Location Search & Geolocation:</strong> Search lookup input box + one-click auto-detection of current user location using browser Geolocation API.</li>
+                        <li><strong>5-Day Forecast Display:</strong> Dynamic rendering of 5-day weather forecast cards with weather icons and metrics.</li>
+                    </ul>
+
+                    <h4 style="margin-bottom: 0.8rem; color: var(--primary-color);">Technology Stack</h4>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 2rem;">
+                        <span class="tech-pill">JavaScript</span>
+                        <span class="tech-pill">HTML5</span>
+                        <span class="tech-pill">CSS3</span>
+                        <span class="tech-pill">RESTful Weather API</span>
                     </div>
 
                     <div style="display: flex; gap: 1rem;">
